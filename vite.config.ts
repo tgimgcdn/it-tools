@@ -20,6 +20,7 @@ const baseUrl = process.env.BASE_URL ?? (process.env.GITHUB_PAGES === 'true' ? '
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: baseUrl,
   plugins: [
     VueI18n({
       runtimeOnly: true,
